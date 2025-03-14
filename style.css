@@ -1,0 +1,51 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4e1e6;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    transition: background 0.3s, color 0.3s;
+}
+
+header {
+    background: #a067a5;
+    padding: 15px;
+    text-align: center;
+    color: white;
+}
+
+.project, .experience-item {
+    background: #ffe4ec;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+img#resume-icon {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.modal-content {
+    background: white;
+    padding: 20px;
+    width: 60%;
+    margin: 10% auto;
+}
+
+.close {
+    cursor: pointer;
+    float: right;
+    font-size: 24px;
+}
