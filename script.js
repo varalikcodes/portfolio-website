@@ -1,8 +1,11 @@
-document.querySelectorAll('nav ul li a').forEach(anchor => {
-    anchor.addEventListener('click', function(e) {
-        e.preventDefault();
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
-            behavior: 'smooth'
-        });
-    });
+document.getElementById('dark-mode-toggle').addEventListener('click', () => {
+    document.body.classList.toggle('dark-mode');
+});
+
+document.getElementById('resume-icon').addEventListener('click', () => {
+    document.getElementById('resume-modal').style.display = 'block';
+});
+
+document.querySelector('.close').addEventListener('click', () => {
+    document.getElementById('resume-modal').style.display = 'none';
 });
