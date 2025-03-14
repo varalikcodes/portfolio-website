@@ -3,59 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Varalika Varanasi | Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Varalika Varanasi - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
         <h1>Varalika Varanasi</h1>
-        <p>AI Enthusiast | UX Designer | Data Analyst</p>
         <nav>
             <ul>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#skills">Skills</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#case-studies">Case Studies</a></li>
                 <li><a href="#contact">Contact</a></li>
+                <li><button id="dark-mode-toggle">🌙</button></li>
+                <li><img id="resume-icon" src="pdf-icon.png" alt="Resume" title="View Resume"></li>
             </ul>
         </nav>
     </header>
 
     <section id="about">
-        <img src="assets/profile.jpg" alt="Profile Picture">
-        <p>Hi, I'm Varalika! Passionate about AI, UX, and Data Science.</p>
+        <h2>About Me</h2>
+        <p>Hi! I'm Varalika, a **Cognitive Science & Computer Science** student passionate about **UX, research, and Bharatnatyam**.</p>
+        <p>Career Goal: Looking for UX Research & Data Science roles that bridge technology with user needs.</p>
+        <p>Fun Fact: I'm a trained Bharatnatyam dancer! 🩰</p>
     </section>
 
-    <section id="projects">
-        <h2>Projects</h2>
-        <div class="project">
-            <img src="assets/project1.jpg" alt="Project 1">
-            <h3>Star-Crossed Spells: Draco & Hermione</h3>
-            <p>Machine learning-based fanfiction recommendation system.</p>
+    <section id="experience">
+        <h2>Work Experience</h2>
+        <div class="experience-item">
+            <h3>Geek Squad Agent, Best Buy</h3>
+            <p>July 2023 – Sept. 2023</p>
+            <p>Provided expert technical support for computer systems and hardware, ensuring seamless customer experience and device functionality.</p>
         </div>
-        <div class="project">
-            <img src="assets/project2.jpg" alt="Project 2">
-            <h3>AI-Powered Virtual Assistant</h3>
-            <p>Developed a voice-interactive personal assistant with AI features.</p>
+        <div class="experience-item">
+            <h3>Engagement Ambassador, Rutgers University</h3>
+            <p>Oct. 2021 – June 2022</p>
+            <p>Secured financial support from alumni, managed patron information, and facilitated transactions.</p>
         </div>
     </section>
 
-    <section id="skills">
-        <h2>Skills</h2>
-        <ul>
-            <li>Python, Java, C++</li>
-            <li>HTML, CSS, JavaScript</li>
-            <li>Figma, Canva, Adobe Photoshop</li>
-            <li>Google Analytics, SQL, Tableau</li>
-        </ul>
+    <section id="portfolio">
+        <h2>Portfolio</h2>
+        <div class="project"><h3>📊 Data-Driven Insights</h3><p>Used Google Sheets, Excel, and Tableau for data visualization.</p></div>
+        <div class="project"><h3>🧠 Machine Learning & Personalization</h3><p>Developed **Star-Crossed Spells**, an ML-powered fanfiction platform.</p></div>
+        <div class="project"><h3>🛠️ UX Research & Canvas Redesign</h3><p>Redesigned Rutgers Canvas UI with user research.</p></div>
+        <div class="project"><h3>📢 Social Media Marketing</h3><p>Led engagement campaigns for Telugu Association.</p></div>
+        <div class="project"><h3>🌍 Immigration Data Analysis</h3><p>Analyzed OECD immigration trends using predictive modeling.</p></div>
+        <div class="project"><h3>🤖 AI-Powered Virtual Assistant</h3><p>Built an AI-powered personal assistant with task automation.</p></div>
     </section>
 
     <section id="contact">
-        <h2>Contact</h2>
+        <h2>Contact Me</h2>
         <p>Email: <a href="mailto:vvaranasi03@gmail.com">vvaranasi03@gmail.com</a></p>
-        <p>GitHub: <a href="https://github.com/your-github" target="_blank">github.com/your-github</a></p>
+        <p>Phone: (609)-332-5405</p>
     </section>
 
     <footer>
-        <p>&copy; 2025 Varalika Varanasi</p>
+        <p>© 2025 Varalika Varanasi</p>
     </footer>
+
+    <div id="resume-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <iframe src="Varalika_Varanasi_Resume.pdf" width="100%" height="500px"></iframe>
+        </div>
+    </div>
 </body>
 </html>
